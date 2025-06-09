@@ -30,14 +30,7 @@ const HeroSection = () => {
         </div>
 
         {/* Call to action button */}
-        <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2 z-20">
-          <Button
-            variant="ghost"
-            className="bg-transparent border-none text-[#00FF99] text-2xl font-bold tracking-[1.5px] hover:bg-transparent hover:text-[#00FF99]/80 px-0 font-['Puritan']"
-          >
-            &gt;&gt;click aqui&lt;&lt;
-          </Button>
-        </div>
+        <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2 z-20"></div>
       </div>
       {/* Background wallpaper section */}
       <div className="w-full h-[1080px] bg-gray-100 flex items-center justify-center aspect-[16/9]">

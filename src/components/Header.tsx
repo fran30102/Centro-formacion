@@ -35,36 +35,28 @@ const Header = () => {
               </div>
             </div>
 
-            {/* Navigation */}
-            <nav className="hidden md:flex items-center space-x-0">
-              <Button
-                variant="ghost"
-                className="h-32 px-16 text-black text-2xl font-bold tracking-wider hover:bg-gray-50 rounded-none font-roboto"
-              >
-                Sobre Nosotros
-              </Button>
-              <Button
-                variant="ghost"
-                className="h-32 px-16 text-black text-2xl font-bold tracking-wider hover:bg-gray-50 rounded-none font-roboto"
-              >
-                Cursos
-              </Button>
-              <Button
-                variant="ghost"
-                className="h-32 px-16 text-black text-2xl font-bold tracking-wider hover:bg-gray-50 rounded-none font-roboto"
-              >
-                Contacto
-              </Button>
-            </nav>
+            {/* Navigation Buttons */}
+            <Button
+              variant="ghost"
+              className="h-32 px-16 text-black text-2xl font-bold tracking-wider hover:bg-gray-50 rounded-none font-roboto"
+            >
+              Sobre Nosotros
+            </Button>
+            <Button
+              variant="ghost"
+              className="h-32 px-16 text-black text-2xl font-bold tracking-wider hover:bg-gray-50 rounded-none font-roboto"
+            >
+              Cursos
+            </Button>
+            <Button
+              variant="ghost"
+              className="h-32 px-16 text-black text-2xl font-bold tracking-wider hover:bg-gray-50 rounded-none font-roboto"
+            >
+              Contacto
+            </Button>
 
-            {/* Contact info (right side) */}
-            <div className="flex items-center space-x-2">
-              <div className="w-6 h-0.5 bg-gray-800 transform rotate-90"></div>
-              <Phone className="w-8 h-9 text-gray-800" />
-              <span className="text-black text-2xl font-normal tracking-wider font-roboto">
-                +54 11 7600-8507
-              </span>
-            </div>
+            {/* Empty nav for spacing */}
+            <nav className="hidden md:flex items-center space-x-0"></nav>
           </div>
         </div>
       </div>
