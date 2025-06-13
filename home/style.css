@@ -209,3 +209,21 @@ header .nav-link:hover {
     padding: 50px 0;
   }
 }
+
+.tarjetas-cfp-container {
+  margin-bottom: 20px;
+}
+
+.tarjeta-cfp {
+  border: 1px solid #dee2e6;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.tarjeta-cfp-img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
