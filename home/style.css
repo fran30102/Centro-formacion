@@ -1,0 +1,107 @@
+/* Fondo general para el sitio (opcional) */
+body {
+  background-color: #ffffff;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Ajustes generales del header */
+header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #dee2e6;
+}
+
+/* Logo alineado */
+header a img {
+  max-height: 40px;
+}
+
+/* Navegación */
+header .nav-link {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #333;
+}
+
+header .nav-link:hover {
+  color: #007bff;
+}
+
+/* Íconos de redes */
+.fab, .fas {
+  font-size: 1rem;
+}
+
+/* Teléfono */
+.border-end {
+  border-right: 1px solid #ccc !important;
+}
+
+/* Estilos para la sección de videos */
+.video-section {
+  background-color: #f8f9fa;
+  padding: 60px 0;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%; /* Aspecto 16:9 */
+  margin-bottom: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.video-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.video-description {
+  color: #666;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+/* Responsive para móviles */
+@media (max-width: 768px) {
+  .video-section {
+    padding: 40px 0;
+  }
+  
+  /* Ajustes adicionales para móviles */
+  header .container {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  header .nav {
+    justify-content: center;
+  }
+  
+  .video-title {
+    font-size: 1rem;
+  }
+  
+  .video-description {
+    font-size: 0.85rem;
+  }
+}
+
+/* Media query para tablets */
+@media (max-width: 992px) {
+  .video-section {
+    padding: 50px 0;
+  }
+}
