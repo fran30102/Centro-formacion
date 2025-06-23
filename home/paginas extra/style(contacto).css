@@ -36,24 +36,3 @@ header .nav-link:hover {
   border-right: 1px solid #ccc !important;
 }
 
-
-
-.footer {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  padding: 0;
-  margin: 0;
-}
-
-.footer li {
-  margin: 0 10px;
-  position: relative;
-}
-
-.footer li:not(:last-child)::after {
-  content: "|";
-  position: absolute;
-  right: -10px;
-  color: #888;
-}

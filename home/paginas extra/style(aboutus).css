@@ -36,24 +36,23 @@ header .nav-link:hover {
   border-right: 1px solid #ccc !important;
 }
 
+.titulo {
+      color: #002856; /* Azul oscuro */
+      font-weight: bold;
+      text-align: center;
+    }
 
+    .contenido-texto {
+      text-align: justify;
+      font-size: 1.05rem;
+    }
 
-.footer {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  padding: 0;
-  margin: 0;
-}
+    .seccion {
+      min-height: 100vh; /* Altura mínima de pantalla completa */
+      display: flex;
+      align-items: center;
+    }
 
-.footer li {
-  margin: 0 10px;
-  position: relative;
-}
-
-.footer li:not(:last-child)::after {
-  content: "|";
-  position: absolute;
-  right: -10px;
-  color: #888;
-}
+    .img-fluid {
+      border-radius: 8px;
+    }
