@@ -42,17 +42,43 @@ header .nav-link:hover {
       text-align: center;
     }
 
-    .contenido-texto {
-      text-align: justify;
-      font-size: 1.05rem;
-    }
+  .banner-porque-elegirnos {
+  text-align: center;
+  padding: 40px 20px;
+  font-family: sans-serif;
+}
 
-    .seccion {
-      min-height: 100vh; /* Altura mínima de pantalla completa */
-      display: flex;
-      align-items: center;
-    }
+.banner-porque-elegirnos h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #001f4d;
+  margin-bottom: 20px;
+}
 
-    .img-fluid {
-      border-radius: 8px;
-    }
+.contenido-banner {
+  background-color: #3399cc;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  clip-path: polygon(0% 0%, 2.5% 50%, 0% 100%, 100% 100%, 97.5% 50%, 100% 0%);
+  max-width: 1000px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.lista-beneficios {
+  text-align: left;
+  list-style: disc;
+  margin-left: 40px;
+  font-size: 16px;
+}
+
+.llamado-accion {
+  text-align: right;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-right: 40px;
+}
