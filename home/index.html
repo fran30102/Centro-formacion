@@ -252,21 +252,30 @@
     </div>
   </div>
 </div>
-    <div class="seccion-contacto">
+   <div class="seccion-contacto">
   <h2 class="titulo-contacto">Contacto</h2>
 
   <div class="contenido-contacto">
     <div class="formulario-contacto">
-      <form>
-        <input type="text" placeholder="Nombre..." required>
-        <input type="text" placeholder="Apellido..." required>
-        <input type="text" placeholder="DNI..." required>
-        <input type="tel" placeholder="Teléfono..." required>
-        <textarea rows="4" placeholder="Describenos tu problema..." required></textarea>
+      <form id="contactForm" action="https://formspree.io/f/xnnvlpby" method="POST">
+        <input type="text" name="nombre" placeholder="Nombre..." required>
+        <input type="text" name="apellido" placeholder="Apellido..." required>
+        <input type="text" name="dni" placeholder="DNI..." required>
+        <input type="tel" name="telefono" placeholder="Teléfono..." required>
+        <textarea name="mensaje" rows="4" placeholder="Describinos tu problema..." required></textarea>
+
+        <!-- Protección anti bots -->
+        <input type="text" name="_gotcha" style="display:none">
+
         <button type="submit">Enviar</button>
       </form>
+
+      <!-- Mensaje de agradecimiento oculto -->
+      <div id="graciasMensaje" style="display:none; margin-top: 15px; color: green; font-weight: bold;">
+        ¡Gracias por tu mensaje! Te responderemos pronto.
+      </div>
     </div>
-    
+
     <div class="mapa-contacto">
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.901615925476!2d-58.69642278494956!3d-34.6333092804566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc793c9b91e2d%3A0xd6f013b0db2490a1!2sEl%20Talar%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1681234567890"
@@ -275,6 +284,32 @@
     </div>
   </div>
 </div>
+
+<script>
+  const form = document.getElementById('contactForm');
+  const gracias = document.getElementById('graciasMensaje');
+
+  form.addEventListener('submit', async function (e) {
+    e.preventDefault();
+
+    const formData = new FormData(form);
+    const response = await fetch(form.action, {
+      method: form.method,
+      body: formData,
+      headers: {
+        'Accept': 'application/json'
+      }
+    });
+
+    if (response.ok) {
+      form.reset();
+      gracias.style.display = 'block';
+    } else {
+      alert('Hubo un error al enviar. Por favor, intentá más tarde.');
+    }
+  });
+</script>
+
 
       <footer class="py-3 my-4"> 
         <ul class="nav justify-content-center gap-5 pb-3 mb-3"> 
