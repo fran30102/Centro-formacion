@@ -1,21 +1,17 @@
-/* Fondo general para el sitio (opcional) */
 body {
   background-color: #ffffff;
   font-family: 'Segoe UI', sans-serif;
 }
 
-/* Ajustes generales del header */
 header {
   background-color: #ffffff;
   border-bottom: 1px solid #dee2e6;
 }
 
-/* Logo alineado */
 header a img {
   max-height: 40px;
 }
 
-/* Navegación */
 header .nav-link {
   font-weight: 600;
   font-size: 1rem;
@@ -26,12 +22,10 @@ header .nav-link:hover {
   color: #007bff;
 }
 
-/* Íconos de redes */
 .fab, .fas {
   font-size: 1rem;
 }
 
-/* Teléfono */
 .border-end {
   border-right: 1px solid #ccc !important;
 }
