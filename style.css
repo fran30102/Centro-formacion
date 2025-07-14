@@ -102,6 +102,49 @@ header .nav-link:hover {
   }
 }
 
+@keyframes slideBounce {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  60% {
+    transform: translateX(20px);
+    opacity: 1;
+  }
+  80% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.animated-title {
+  background: linear-gradient(90deg, #00c6ff, #00c6ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+  display: inline-block;
+  animation: slideBounce 1.5s ease-out;
+}
+
+.animated-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  height: 3px;
+  background: #00c6ff;
+  animation: underline 1s forwards 1.5s;
+}
+
+@keyframes underline {
+  to {
+    width: 100%;
+  }
+}
+
 .seccion-contacto {
   width: 100%;
   background-color: #f2f2f2;
